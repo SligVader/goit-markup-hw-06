@@ -285,6 +285,16 @@
               </svg></a>
           </div>
         </div>
+        <div class="footer-form">
+          <form>
+            <h4 class="footer-form-label">Subscribe to the news letter</h4>
+            <div class="footer-form-field">
+            <label for="mail"></label>
+            <input type="email" name="mail" id="mail" placeholder="E-mail"/>
+            <button class="footer-form-btn" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
       </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -294,6 +304,30 @@
         <use href="images/icons.svg#icon-x-1"></use>
       </svg>
       </button>
+      <form class="form">
+        <h5 class="form-label">Leave your information and we'll call you back</h5>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"/>
+          </div>
+          <div class="form-field">
+            <label for="tel">Telephone</label>
+            <input type="tel" name="tel" id="tel"/>
+          </div>
+          <div class="form-field">
+            <label for="mail">E-mail</label>
+            <input type="email" name="mail" id="mail"/>
+          </div>
+           <div class="form-field">
+            <label for="comment">Comments</label>
+            <textarea class="textarea-form" name="comment" id="comment" placeholder="Enter the text"></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" name="policy" id="policy"/>
+            <label for="policy">I agree with the newsletter and accept the Terms and Conditions</label>
+          </div>
+        <button class="btn" type="submit">Send</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
