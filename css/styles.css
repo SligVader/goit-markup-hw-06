@@ -488,6 +488,7 @@ text-transform: uppercase;
 font-size: 14px;
 color: var(--background-color-two);
 margin-bottom: 20px;
+display: block;
 }
 .footer-form-field {
 display: flex;
@@ -641,6 +642,10 @@ margin-left: 24px;
   display: flex;
   flex-direction: column;
 }
+/* .form-label {
+font-size: 20px;
+margin-bottom: 12px;
+} */
 .form-label {
 font-size: 20px;
 margin-bottom: 12px;
@@ -651,7 +656,29 @@ margin-bottom: 12px;
 margin-bottom: 10px;
 display: flex;
 flex-direction: column;
+position: relative;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left:15px;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.textarea-form:hover,
+.textarea-form:focus,
+.form-field input:hover,
+.form-field input:focus {
+  outline: 1px solid var(--brand-color);
+  fill: var(--brand-color);}
+
+.form-field input:hover ~ .form-icon,
+.form-field input:focus ~ .form-icon {
+ fill: var(--brand-color);}
 
 .form-field label {
   margin-bottom: 4px;
@@ -663,7 +690,8 @@ flex-direction: column;
 border: 1px solid rgba(33, 33, 33, 0.2);
 height: 40px;
 border-radius: 4px;
-padding-left: 16px;
+padding-left: 40px;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field input::placeholder {
@@ -672,16 +700,20 @@ padding-left: 16px;
   font-size: 14px;
 }
 
+
 textarea {
   resize: none;
 }
 .textarea-form {
   border: 1px solid rgba(33, 33, 33, 0.2);
-  height: 120px;
+  min-height: 120px;
   border-radius: 4px;
   padding: 12px 16px;
   margin-bottom: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
+
+
 .form-checkbox {
   margin-left: 12px;
   font-size: 15px;
