@@ -231,7 +231,6 @@ li > .current {
   overflow: hidden;
   visibility: hidden;
   pointer-events: none;
-  position: absolute;
 }
 .features-icon {
   display: flex;
@@ -483,7 +482,7 @@ align-items: center;
   width: 570px;
   height: 86px;
 }
-.footer-form-label {
+.footer-form-header {
 text-transform: uppercase;
 font-size: 14px;
 color: var(--background-color-two);
@@ -522,6 +521,10 @@ display: flex;
   border-color: transparent;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-icon {
+fill: var(--background-color-two);
+margin-left: 20px;
 }
 
 .footer-form-btn:hover,
@@ -642,18 +645,20 @@ margin-left: 24px;
   display: flex;
   flex-direction: column;
 }
-/* .form-label {
+
+.form-header {
 font-size: 20px;
-margin-bottom: 12px;
-} */
+margin-bottom: 30px;
+}
+
 .form-label {
-font-size: 20px;
-margin-bottom: 12px;
+  position: absolute;
+  top:-20px;
 }
 
 
 .form-field {
-margin-bottom: 10px;
+margin-bottom: 30px;
 display: flex;
 flex-direction: column;
 position: relative;
@@ -664,9 +669,12 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(
   position: absolute;
   top: 50%;
   left:15px;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-icon:hover {
+fill: var(--brand-color);}
 
 
 .textarea-form:hover,
