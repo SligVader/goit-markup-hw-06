@@ -309,38 +309,38 @@
       </svg>
       </button>
       <form class="form" name="inquiry-form" autocomplete="on" novalidate>
-        <strong class="form-header">Leave your information and we'll call you back</strong>
-          <div class="form-field">
-            <label class="form-label" for="user-name">Name</label>
-            <input class="form-input" type="text" name="user-name" id="user-name"/>
+          <strong class="form-header">Leave your information and we'll call you back</strong>
+          <label class="form-field">
+            <input class="form-input" type="text" name="user-name"/>
+             <span class="form-label">Name</span>
             <svg class="form-icon" height="18" width="18">
               <use href="images/icons.svg#avatar"></use>
             </svg>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="user-tel">Telephone</label>
-            <input type="tel" name="user-tel" id="user-tel"/>
+          </label>
+          <label class="form-field">
+            <input class="form-input" type="tel" name="user-tel"/>
+             <span class="form-label">Telephone</span>
             <svg class="form-icon" height="18" width="18">
               <use href="images/icons.svg#phone"></use>
             </svg>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="user-email">E-mail</label>
-            <input type="email" name="user-email" id="user-email"/>
+          </label>
+          <label class="form-field">
+            <input class="form-input" type="email" name="user-email"/>
+             <span class="form-label">E-mail</span>
             <svg class="form-icon" height="18" width="18">
               <use href="images/icons.svg#envelope-2"></use>
             </svg>
-          </div>
-           <div class="form-field">
-            <label class="form-label" for="comment">Comments</label>
-            <textarea class="textarea-form" name="comment" id="comment" placeholder="Enter the text"></textarea>
-          </div>
-          <div class="form-checkbox">
-            <input class="checkbox" type="checkbox" name="policy" id="policy"/>
+          </label>
+          <label class="form-field textarea">
+            <span class="form-label">Comments</span>
+            <textarea class="textarea-form" name="comment" rows="6" placeholder="Enter the text"></textarea>  
+          </label>
+          <label class="form-checkbox">
+            <input class="checkbox" type="checkbox" name="policy"/>
             <span class="checkbox-icon"></span>
-            <label class="check-box-label" for="policy">I agree with the newsletter and accept the Terms and Conditions</label>
-          </div>
-        <button class="btn" type="submit">Send</button>
+            <span>I agree with the newsletter and accept the Terms and Conditions</span>
+          </label>
+          <button class="btn" type="submit">Send</button>
       </form>
     </div>
   </div>
